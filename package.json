@@ -1,0 +1,31 @@
+{
+  "name": "dsh-balance-chip",
+  "version": "0.1.0",
+  "description": "A compact account-balance chip left of the composer mic buttons, reusing the bottom info bar's balance snapshot.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

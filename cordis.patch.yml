@@ -1,0 +1,4 @@
+# dsh-balance-chip bundle mount (new plugin -> `insert:`).
+- insert:
+    - id: balance-chip
+      name: 'dsh-balance-chip'
